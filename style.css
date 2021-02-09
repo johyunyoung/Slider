@@ -1,0 +1,88 @@
+@import "reset.css";
+
+body {
+  background-color: gray;
+}
+
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: antiquewhite;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto 0;
+}
+
+.slider {
+  width: 500vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: aquamarine;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  float: left;
+}
+
+.slide:nth-child(1) {
+  background-color: tomato;
+}
+
+.slide:nth-child(2) {
+  background-color: rgb(79, 80, 94);
+}
+
+.slide:nth-child(3) {
+  background-color: rgb(221, 255, 71);
+}
+
+.slide:nth-child(4) {
+  background-color: rgb(71, 243, 255);
+}
+
+.slide:nth-child(5) {
+  background-color: rgb(92, 255, 71);
+}
+
+.lastClone {
+  background-color: rgb(92, 255, 71);
+}
+
+.firstClone {
+  background-color: tomato;
+}
